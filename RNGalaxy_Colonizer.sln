@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNGalaxy_Colonizer", "RNGalaxy_Colonizer\RNGalaxy_Colonizer.csproj", "{5354896E-1334-42BE-AE95-1397D00D68EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5354896E-1334-42BE-AE95-1397D00D68EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5354896E-1334-42BE-AE95-1397D00D68EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5354896E-1334-42BE-AE95-1397D00D68EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5354896E-1334-42BE-AE95-1397D00D68EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

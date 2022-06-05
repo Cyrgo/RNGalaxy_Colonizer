@@ -1,0 +1,15 @@
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\bin\Debug\net6.0\RNGalaxy_Colonizer.exe
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\bin\Debug\net6.0\RNGalaxy_Colonizer.deps.json
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\bin\Debug\net6.0\RNGalaxy_Colonizer.runtimeconfig.json
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\bin\Debug\net6.0\RNGalaxy_Colonizer.dll
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\bin\Debug\net6.0\RNGalaxy_Colonizer.pdb
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.csproj.AssemblyReference.cache
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.AssemblyInfoInputs.cache
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.AssemblyInfo.cs
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.csproj.CoreCompileInputs.cache
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.dll
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\refint\RNGalaxy_Colonizer.dll
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.pdb
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\RNGalaxy_Colonizer.genruntimeconfig.cache
+C:\Users\cyrgo\RiderProjects\RNGalaxy_Colonizer\RNGalaxy_Colonizer\obj\Debug\net6.0\ref\RNGalaxy_Colonizer.dll
