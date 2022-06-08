@@ -2,7 +2,7 @@
 
 namespace RNGalaxy_Colonizer.Generators;
 
-public class StarGenerator {
+public static class StarGenerator {
     public static SpectralType GenerateSpectralType() {
         var spectralTypes = new List<SpectralType> {
             SpectralType.O, SpectralType.B, SpectralType.A, SpectralType.F,
@@ -25,7 +25,7 @@ public class StarGenerator {
             SpectralType.K => random.Next(3201, 4500),
             SpectralType.M => random.Next(3000, 3200),
             SpectralType.D => random.Next(3000, 80000),
-            _ => random.Next(4501, 5700)
+            _ => random.Next(3000, 3200)
         };
         return temp;
     }
@@ -40,7 +40,7 @@ public class StarGenerator {
             SpectralType.K => GeneratorUtils.RandomDouble(0.31, 0.8),
             SpectralType.M => GeneratorUtils.RandomDouble(0.02, 0.3),
             SpectralType.D => GeneratorUtils.RandomDouble(0.009, 0.01),
-            _ => GeneratorUtils.RandomDouble(0.9, 1.0)
+            _ => GeneratorUtils.RandomDouble(0.02, 0.3)
         };
         return radius;
     }
@@ -55,7 +55,7 @@ public class StarGenerator {
             SpectralType.K => GeneratorUtils.RandomDouble(0.3, 0.7),
             SpectralType.M => GeneratorUtils.RandomDouble(0.02, 0.2),
             SpectralType.D => GeneratorUtils.RandomDouble(0.009, 0.01),
-            _ => GeneratorUtils.RandomDouble(0.8, 1.0)
+            _ => GeneratorUtils.RandomDouble(0.02, 0.2)
         };
         return mass;
     }
@@ -70,7 +70,7 @@ public class StarGenerator {
             SpectralType.K => GeneratorUtils.RandomDouble(0.02, 0.2),
             SpectralType.M => GeneratorUtils.RandomDouble(0.006, 0.01),
             SpectralType.D => GeneratorUtils.RandomDouble(0.0009, 0.005),
-            _ => GeneratorUtils.RandomDouble(0.3, 1.0)
+            _ => GeneratorUtils.RandomDouble(0.006, 0.01)
         };
         return luminosity;
     }
@@ -86,7 +86,7 @@ public class StarGenerator {
             SpectralType.K => random.Next(50000, 199999),
             SpectralType.M => 200000,
             SpectralType.D => 0,
-            _ => random.Next(3000, 9999)
+            _ => 200000
         };
         return lifeTime;
     }

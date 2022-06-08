@@ -56,7 +56,7 @@ public class Star {
             SpectralType.K => "Orange Giant",
             SpectralType.M => "Red Giant",
             SpectralType.D => "White Dwarf",
-            _ => "Yellow Giant"
+            _ => "Red Giant"
         };
         return starType;
     }
