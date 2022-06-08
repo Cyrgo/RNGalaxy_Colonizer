@@ -16,7 +16,7 @@ var star = new Star(
 Console.WriteLine("Spectral Type: " + star.SpectralType);
 Console.WriteLine("Star Type: " + star.StarType);
 Console.WriteLine("Temperature: " + star.Temperature + "K");
-Console.WriteLine("Radius: " + star.Radius.ToString(CultureInfo.CurrentCulture) + " Earth Suns");
-Console.WriteLine("Mass: " + star.Mass.ToString(CultureInfo.CurrentCulture) + " Earth Suns");
-Console.WriteLine("Luminosity: " + star.Luminosity.ToString(CultureInfo.CurrentCulture) + " Earth Suns");
+Console.WriteLine("Radius: " + star.Radius.ToString(CultureInfo.CurrentCulture) + " times Earth's Sun");
+Console.WriteLine("Mass: " + star.Mass.ToString(CultureInfo.CurrentCulture) + " times Earth's Sun");
+Console.WriteLine("Luminosity: " + star.Luminosity.ToString(CultureInfo.CurrentCulture) + " times Earth's Sun");
 Console.WriteLine("Lifetime: " + star.LifeTime + " Million Years");
