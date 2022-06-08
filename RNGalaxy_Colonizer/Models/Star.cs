@@ -28,6 +28,9 @@ public enum SpectralType {
 
 public class Star {
     public SpectralType SpectralType { get; }
+
+    public string StarType => GetStarType(this.SpectralType);
+
     public int Temperature { get; }
     public double Radius { get; }
     public double Mass { get; }
@@ -43,7 +46,7 @@ public class Star {
         this.LifeTime = lifeTime;
     }
 
-    public static string GetStarType(SpectralType spectralType) {
+    private static string GetStarType(SpectralType spectralType) {
         var starType = spectralType switch {
             SpectralType.O => "Large Blue Super Giant",
             SpectralType.B => "Medium Blue Super Giant",

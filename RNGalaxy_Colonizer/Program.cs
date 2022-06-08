@@ -14,7 +14,7 @@ var star = new Star(
 );
 
 Console.WriteLine("Spectral Type: " + star.SpectralType);
-Console.WriteLine("Star Type: " + Star.GetStarType(star.SpectralType));
+Console.WriteLine("Star Type: " + star.StarType);
 Console.WriteLine("Temperature: " + star.Temperature + "K");
 Console.WriteLine("Radius: " + star.Radius.ToString(CultureInfo.CurrentCulture) + " Earth Suns");
 Console.WriteLine("Mass: " + star.Mass.ToString(CultureInfo.CurrentCulture) + " Earth Suns");
