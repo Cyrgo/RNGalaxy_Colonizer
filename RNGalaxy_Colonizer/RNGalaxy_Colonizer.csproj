@@ -38,6 +38,18 @@
       <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
       <Compile Include="obj\Debug\net6.0\RNGalaxy_Colonizer.AssemblyInfo.cs" />
       <Compile Include="obj\Debug\net6.0\RNGalaxy_Colonizer.GlobalUsings.g.cs" />
+      <Compile Remove="obj\**" />
+      <Compile Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+      <EmbeddedResource Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
+      <None Remove="bin\**" />
     </ItemGroup>
 
 </Project>
