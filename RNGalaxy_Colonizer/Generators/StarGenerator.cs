@@ -1,4 +1,4 @@
-﻿using RNGalaxy_Colonizer.Models;
+﻿using RNGalaxy_Colonizer.Models.Enums;
 
 namespace RNGalaxy_Colonizer.Generators;
 
