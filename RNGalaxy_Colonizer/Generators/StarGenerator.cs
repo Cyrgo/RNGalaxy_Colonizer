@@ -1,9 +1,10 @@
-﻿using RNGalaxy_Colonizer.Models.Enums;
+﻿using RNGalaxy_Colonizer.Models.CelestialBodies;
+using RNGalaxy_Colonizer.Models.Enums;
 
 namespace RNGalaxy_Colonizer.Generators;
 
 public static class StarGenerator {
-    public static SpectralType GenerateSpectralType() {
+    private static SpectralType GenerateSpectralType() {
         var spectralTypes = new List<SpectralType> {
             SpectralType.O, SpectralType.B, SpectralType.A, SpectralType.F,
             SpectralType.G, SpectralType.K, SpectralType.M, SpectralType.D
@@ -14,7 +15,7 @@ public static class StarGenerator {
         return randSpectralType;
     }
 
-    public static int GenerateTemperature(SpectralType spectralType) {
+    private static int GenerateTemperature(SpectralType spectralType) {
         var random = new Random();
         var temp = spectralType switch {
             SpectralType.O => random.Next(20001, 40000),
@@ -30,7 +31,7 @@ public static class StarGenerator {
         return temp;
     }
 
-    public static double GenerateRadius(SpectralType spectralType) {
+    private static double GenerateRadius(SpectralType spectralType) {
         var radius = spectralType switch {
             SpectralType.O => GeneratorUtils.RandomDouble(5.01, 10.0),
             SpectralType.B => GeneratorUtils.RandomDouble(1.71, 5.0),
@@ -45,7 +46,7 @@ public static class StarGenerator {
         return radius;
     }
 
-    public static double GenerateMass(SpectralType spectralType) {
+    private static double GenerateMass(SpectralType spectralType) {
         var mass = spectralType switch {
             SpectralType.O => GeneratorUtils.RandomDouble(11.0, 50.0),
             SpectralType.B => GeneratorUtils.RandomDouble(2.1, 10.0),
@@ -60,7 +61,7 @@ public static class StarGenerator {
         return mass;
     }
 
-    public static double GenerateLuminosity(SpectralType spectralType) {
+    private static double GenerateLuminosity(SpectralType spectralType) {
         var luminosity = spectralType switch {
             SpectralType.O => GeneratorUtils.RandomDouble(1001.0, 100000.0),
             SpectralType.B => GeneratorUtils.RandomDouble(21.0, 1000.0),
@@ -75,7 +76,7 @@ public static class StarGenerator {
         return luminosity;
     }
 
-    public static int GenerateLifeTime(SpectralType spectralType) {
+    private static int GenerateLifeTime(SpectralType spectralType) {
         var random = new Random();
         var lifeTime = spectralType switch {
             SpectralType.O => random.Next(10, 99),
@@ -89,5 +90,18 @@ public static class StarGenerator {
             _ => 200000
         };
         return lifeTime;
+    }
+
+    public static Star Generate() {
+        var spectralType = GenerateSpectralType();
+        var newStar = new Star(
+            spectralType,
+            GenerateTemperature(spectralType),
+            GenerateRadius(spectralType),
+            GenerateMass(spectralType),
+            GenerateLuminosity(spectralType),
+            GenerateLifeTime(spectralType)
+        );
+        return newStar;
     }
 }
