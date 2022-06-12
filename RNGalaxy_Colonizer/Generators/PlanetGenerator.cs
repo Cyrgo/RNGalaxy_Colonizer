@@ -59,6 +59,7 @@ public static class PlanetGenerator {
         Planet randomPlanet = randInt switch {
             1 => new GiantPlanet(GenerateGiantPlanetType(), "Giant Planet"),
             2 => new OtherPlanet(GenerateOtherPlanetType(), "Other Planet"),
+            3 => new TerrestrialPlanet(GenerateTerrestrialPlanetType(), "Terrestrial Planet"),
             _ => new TerrestrialPlanet(GenerateTerrestrialPlanetType(), "Terrestrial Planet")
         };
 
