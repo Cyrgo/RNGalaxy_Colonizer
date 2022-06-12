@@ -5,7 +5,7 @@ namespace RNGalaxy_Colonizer.Models.CelestialBodies;
 
 public class Star {
     private SpectralType SpectralType { get; }
-    private string StarType => GetStarType(this.SpectralType);
+    private string StarTypeName => GetStarTypeName(this.SpectralType);
     private int Temperature { get; }
     private double Radius { get; }
     private double Mass { get; }
@@ -21,7 +21,7 @@ public class Star {
         this.LifeTime = lifeTime;
     }
 
-    private static string GetStarType(SpectralType spectralType) {
+    private static string GetStarTypeName(SpectralType spectralType) {
         var starType = spectralType switch {
             SpectralType.O => "Large Blue Super Giant",
             SpectralType.B => "Medium Blue Super Giant",
@@ -38,7 +38,7 @@ public class Star {
 
     public void Details() {
         Console.WriteLine("Spectral Type: " + this.SpectralType);
-        Console.WriteLine("Star Type: " + this.StarType);
+        Console.WriteLine("Star Type: " + this.StarTypeName);
         Console.WriteLine("Temperature: " + this.Temperature + "K");
         Console.WriteLine("Radius: " + this.Radius.ToString(CultureInfo.CurrentCulture) + " times Earth's Sun");
         Console.WriteLine("Mass: " + this.Mass.ToString(CultureInfo.CurrentCulture) + " times Earth's Sun");
