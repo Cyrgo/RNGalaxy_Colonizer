@@ -5,11 +5,12 @@ namespace RNGalaxy_Colonizer.Models.CelestialBodies.Planets;
 public class GiantPlanet : Planet {
     private GiantPlanetType GiantPlanetType { get; }
     private string GiantTypeName => GetGiantTypeName(this.GiantPlanetType);
-    
-    public GiantPlanet(GiantPlanetType giantPlanetType, string name) : base(name) {
+
+    public GiantPlanet(GiantPlanetType giantPlanetType, string name) : base(giantPlanetType, name) {
         this.GiantPlanetType = giantPlanetType;
+        this.PlanetType = this.GiantPlanetType;
         this.Name = name;
-        this.Type = this.GiantTypeName;
+        this.TypeName = this.GiantTypeName;
     }
 
     private static string GetGiantTypeName(GiantPlanetType giantPlanetType) {

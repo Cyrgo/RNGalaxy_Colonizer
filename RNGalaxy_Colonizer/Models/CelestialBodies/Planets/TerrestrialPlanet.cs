@@ -7,10 +7,11 @@ public class TerrestrialPlanet : Planet {
 
     private string TerrestrialTypeName => GetTerrestrialTypeName(this.TerrestrialPlanetType);
 
-    public TerrestrialPlanet(TerrestrialPlanetType terrestrialPlanetType, string name) : base(name) {
+    public TerrestrialPlanet(TerrestrialPlanetType terrestrialPlanetType, string name) : base(terrestrialPlanetType, name) {
         this.TerrestrialPlanetType = terrestrialPlanetType;
+        this.PlanetType = this.TerrestrialPlanetType;
         this.Name = name;
-        this.Type = this.TerrestrialTypeName;
+        this.TypeName = this.TerrestrialTypeName;
     }
 
     private static string GetTerrestrialTypeName(TerrestrialPlanetType terrestrialPlanetType) {

@@ -7,10 +7,11 @@ public class OtherPlanet : Planet {
 
     private string OtherTypeName => GetOtherTypeName(this.OtherPlanetType);
 
-    public OtherPlanet(OtherPlanetType otherPlanetType, string name) : base(name) {
+    public OtherPlanet(OtherPlanetType otherPlanetType, string name) : base(otherPlanetType, name) {
         this.OtherPlanetType = otherPlanetType;
+        this.PlanetType = this.OtherPlanetType;
         this.Name = name;
-        this.Type = this.OtherTypeName;
+        this.TypeName = this.OtherTypeName;
     }
 
     private static string GetOtherTypeName(OtherPlanetType otherPlanetType) {
